@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Branch Page</title>
+</head>
+<style>
+	.hom{
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: Trebuchet MS;
+  font-size: 3em;
+}
+	.inv{
+	position: absolute;
+  top: 200px;
+  left: 700px;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+	}
+	a{
+	text-decoration: none;
+	color: white;
+}
+</style>
+<body>
+<div class="picture">
+<img src="una.jpg" width="1350" height="635">
+</div>
+<div class="inv">
+	<center><h1>Branch Page</h1></center>
+	<form action="tbl_branch.php" method="post">
+	<center>
+	<table>
+		<tr>
+			<td>Branch number:</td>
+			<td><input type="text" name="bnum" placeholder="X" /></td>
+		</tr>
+		<tr>
+			<td>Branch name:</td>
+			<td><input type="text" name="bname" /></td>
+		</tr>
+		<tr>
+			<td>Branch location:</td>
+			<td><input type="text" name="bloc" /></td>
+		</tr>
+		<tr>
+			<td>Number of Employees:</td>
+			<td><input type="text" name="nemp" /></td>
+		</tr>
+	</table>
+<input type="submit" name="Submit" value="Submit"/>
+&nbsp
+<input type="reset" name="Reset"/> 
+</div>
+<div class="hom">
+    <a href="Home.html">Home</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Page</title>
+</head>
+<style>
+	.hom{
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: Trebuchet MS;
+  font-size: 3em;
+}
+	.inv{
+	position: absolute;
+  top: 200px;
+  left: 700px;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+	}
+	a{
+	text-decoration: none;
+	color: white;
+}
+</style>
+<body>
+	<div class="picture">
+<img src="una.jpg" width="1350" height="635">
+</div>
+	<div class="inv">
+	<center><h1>Book Page</h1></center>
+	<form action="tbl_book.php" method="post">
+	<center>
+	<table>
+		<tr>
+			<td>Book Code:</td>
+			<td><input type="text" name="bcode" placeholder="XXXX" /></td>
+		</tr>
+		<tr>
+			<td>Title:</td>
+			<td><input type="text" name="title" /></td>
+		</tr>
+		<tr>
+			<td>Publisher Code:</td>
+			<td><input type="text" name="pcode" /></td>
+		</tr>
+		<tr>
+			<td>Type:</td>
+			<td><input type="text" name="type" /></td>
+		</tr>
+		<tr>
+			<td>Price:</td>
+			<td><input type="text" name="price" /></td>
+		</tr>
+		<tr>
+			<td>Paperback:</td>
+			<td><input type="text" name="pback"/></td>
+		</tr>
+	</table>
+<input type="submit" name="Submit" value="Submit"/>
+&nbsp
+<input type="reset" name="Reset"/> 
+</div>
+<div class="hom">
+    <a href="Home.html">Home</a>
+</div>
+</body>
+</html>
