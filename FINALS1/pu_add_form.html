@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add a Publisher</title>
+</head>
+<style>
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    input[type=text] {
+        width: 100%;
+        padding: 12px 10px;
+        margin: 9px;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+        background-color:#3CBC8D;
+        color: black;
+    }
+    input[type=submit], input[type=reset]{
+        background-color:  #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    a:link, a:visited {
+        background-color: black;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    a:hover, a:active {
+        background-color: red;
+    }
+
+    </style>
+<body>
+<center><h2>New Publisher Details:</h2></center>
+<center><a href="pu_index.php">Back to Publisher Index</a><center>
+<form method="post" action="pu_create.php">
+    <table>
+        <tr>
+            <td>Publisher Code:</td>
+            <td><input type="text" name="pcod"></td>
+        </tr>
+        <tr>
+            <td>Publisher Name:</td>
+            <td><input type="text" name="pub"></td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><input type="text" name="ct"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="submit" value="Add Record"></td>
+            <td><input type="reset" name="reset" value="Clear"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
